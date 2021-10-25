@@ -47,8 +47,8 @@ class Circle {
     linecol = color(random(255), random(255), random(255));
     fillcol = color(random(255), random(255), random(255));
     alph = random(255);
-    xmove = random(10) - 5;
-    ymove = random(10) - 5;
+    xmove = random(8) - 5;
+    ymove = random(8) - 5;
   }
   
   void drawMe() {
@@ -66,7 +66,7 @@ class Circle {
    angle++; 
    x += xmove;
    float rad = radians(angle);
-   y = ymove + 50 + (sin(rad) * 40);
+   y = ymove + 45 + (sin(rad) * 40);
   }
   else if(pathsel == 1) {
    x += xmove;
@@ -76,7 +76,7 @@ class Circle {
    angle++;
    x += xmove;
    float rad = radians(angle);
-   y = ymove + 50 + (pow(sin(rad), 3) * 30);
+   y = ymove + 45 + (pow(sin(rad), 3) * 30);
   }
   else {
    x += xmove;
