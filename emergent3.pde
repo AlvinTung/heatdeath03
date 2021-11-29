@@ -6,6 +6,10 @@ PImage img1;
 PImage img2;
 PImage img3;
 PImage img4;
+PImage img5;
+PImage img6;
+PImage img7;
+PImage img8;
 PImage bg;
 
 void setup() {
@@ -20,6 +24,10 @@ void setup() {
  img2 = loadImage("shape3.png");
  img3 = loadImage("shape4.png");
  img4 = loadImage("shape5.png");
+ img5 = loadImage("shape6.png");
+ img6 = loadImage("shape7.png");
+ img7 = loadImage("shape8.png");
+ img8 = loadImage("shape9.png");
  
  drawCircles();
 }
@@ -99,7 +107,7 @@ class Circle {
        // stroke(0,100);
        // noFill();
        // overlap *= -1;
-       int size = int(random(5));
+       int size = int(random(9));
        if(size == 0) {  
           image(img, midx, midy);
        }
@@ -114,6 +122,18 @@ class Circle {
        }
        else if(size == 4) {
           image(img4, midx, midy);  
+       }
+       else if(size == 5) {
+          image(img5, midx, midy);  
+       }
+       else if(size == 6) {
+          image(img6, midx, midy);  
+       }
+       else if(size == 7) {
+          image(img7, midx, midy);  
+       }
+       else if(size == 8) {
+          image(img8, midx, midy);  
        }
        else {
           image(img, midx, midy);  
